@@ -23,6 +23,10 @@ public class RomanNumeral
                 throw new NumberFormatException("Invalid format");
             }
 
+            if (number > integerValue) {
+                integerValue *= -1;
+            }
+
             integerValue += number;
 
         }
